@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For McKayla Mary ❤️ Happy My Girl Day</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        burgundy: {
+                            800: '#58111A',
+                            900: '#3B0910',
+                            950: '#230307',
+                        },
+                        petal: {
+                            pink: '#F4C2C2',
+                            soft: '#FFE4E6',
+                            gold: '#E5C158',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 7s ease-in-out infinite',
+                        'spin-slow': 'spin 12s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-12px) rotate(2deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Sacramento&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #230307;
+            color: #FFE4E6;
+            overflow-x: hidden;
+        }
+
+        .font-serif-title {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .font-cursive {
+            font-family: 'Sacramento', cursive;
+        }
+
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .glass-card {
+            background: rgba(59, 9, 16, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(244, 194, 194, 0.18);
+            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.45);
+        }
+
+        .glass-card-hover {
+            transition: all 0.4s ease;
+        }
+
+        .glass-card-hover:hover {
+            border-color: rgba(229, 193, 88, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px 0 rgba(229, 193, 88, 0.15);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #230307;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #58111A;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen text-petal-soft flex flex-col justify-between selection:bg-rose-900 selection:text-petal-gold">
+
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Floating Aesthetic Flowers in Corners -->
+    <div class="fixed top-2 left-2 md:top-6 md:left-6 z-20 pointer-events-none opacity-40 hover:opacity-100 transition-opacity">
+        <svg width="60" height="60" viewBox="0 0 100 100" fill="none">
+            <!-- Spider Lily / Tulip sketch overlay -->
+            <path d="M50 80 C 45 60, 20 50, 10 30 C 30 35, 45 45, 50 80 Z" fill="#F4C2C2" opacity="0.6"/>
+            <path d="M50 80 C 55 60, 80 50, 90 30 C 70 35, 55 45, 50 80 Z" fill="#F4C2C2" opacity="0.6"/>
+            <path d="M50 80 C 50 50, 30 20, 50 10 C 70 20, 50 50, 50 80 Z" fill="#E5C158" opacity="0.7"/>
+            <circle cx="50" cy="10" r="3" fill="#FFE4E6"/>
+        </svg>
+    </div>
+
+    <div class="relative z-10 max-w-2xl mx-auto px-4 py-8 md:py-14 flex-1 flex flex-col justify-center space-y-12">
+
+        <header class="text-center space-y-5 animate-float">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-burgundy-900/80 border border-petal-pink/20 text-xs font-medium tracking-widest text-petal-gold uppercase shadow-inner">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-petal-gold"></i>
+                <span>October 1st • My Girl Day</span>
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-petal-gold"></i>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-serif-title font-bold tracking-wide text-cream leading-tight">
+                For My Entire World,<br>
+                <span class="font-cursive text-5xl md:text-7xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-petal-pink via-rose-300 to-petal-gold">McKayla Mary</span>
+            </h1>
+
+            <p class="italic font-serif-title text-lg md:text-xl text-petal-pink/90 max-w-lg mx-auto">
+                "You will be my girl. We fell in love in October."
+            </p>
+
+            <!-- YouTube Music Card -->
+            <div class="glass-card rounded-2xl p-4 max-w-md mx-auto text-left flex items-center space-x-4 border-petal-pink/30 hover:border-petal-gold/40 transition-colors">
+                <div class="relative flex-shrink-0">
+                    <div class="w-12 h-12 rounded-full bg-burgundy-800 flex items-center justify-center border border-petal-gold/30">
+                        <i data-lucide="music" class="w-6 h-6 text-petal-gold animate-pulse"></i>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-xs uppercase tracking-wider text-petal-gold font-semibold">Special Song</p>
+                    <h2 class="text-sm font-semibold text-cream truncate">we fell in love in october</h2>
+                    <p class="text-xs text-petal-pink/70">girl in red</p>
+                </div>
+                <a href="https://youtu.be/WECKJ1VzCVA?si=8SbukN0f6ZTkx5VX" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-petal-pink/20 hover:bg-petal-pink/30 text-petal-soft transition-all">
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </header>
+
+        <section class="glass-card rounded-3xl p-6 md:p-8 text-center space-y-4">
+            <div class="flex items-center justify-center space-x-2">
+                <i data-lucide="heart" class="w-4 h-4 text-rose-400 fill-rose-400"></i>
+                <h2 class="text-xs uppercase tracking-widest text-petal-gold font-semibold">Fell In Love Officially • June 23rd</h2>
+                <i data-lucide="heart" class="w-4 h-4 text-rose-400 fill-rose-400"></i>
+            </div>
+            
+            <div class="grid grid-cols-4 gap-2 md:gap-4 text-center">
+                <div class="p-3 bg-burgundy-950/60 rounded-2xl border border-petal-pink/10">
+                    <span id="days" class="text-2xl md:text-4xl font-bold font-serif-title text-cream">0</span>
+                    <p class="text-[10px] md:text-xs text-petal-pink/80 mt-0.5">Days</p>
+                </div>
+                <div class="p-3 bg-burgundy-950/60 rounded-2xl border border-petal-pink/10">
+                    <span id="hours" class="text-2xl md:text-4xl font-bold font-serif-title text-cream">0</span>
+                    <p class="text-[10px] md:text-xs text-petal-pink/80 mt-0.5">Hours</p>
+                </div>
+                <div class="p-3 bg-burgundy-950/60 rounded-2xl border border-petal-pink/10">
+                    <span id="minutes" class="text-2xl md:text-4xl font-bold font-serif-title text-cream">0</span>
+                    <p class="text-[10px] md:text-xs text-petal-pink/80 mt-0.5">Mins</p>
+                </div>
+                <div class="p-3 bg-burgundy-950/60 rounded-2xl border border-petal-pink/10">
+                    <span id="seconds" class="text-2xl md:text-4xl font-bold font-serif-title text-cream">0</span>
+                    <p class="text-[10px] md:text-xs text-petal-pink/80 mt-0.5">Secs</p>
+                </div>
+            </div>
+            <p class="text-xs italic text-petal-pink/60">"Every single day with you feels like October 1st..."</p>
+        </section>
+
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3 border-b border-petal-pink/15 pb-3">
+                <i data-lucide="flower-2" class="w-5 h-5 text-petal-gold"></i>
+                <h2 class="text-xl font-serif-title font-bold text-cream tracking-wide">Our Journey & Core Memories</h2>
+            </div>
+
+            <div class="space-y-4 relative border-l-2 border-petal-pink/20 ml-3 pl-6">
+                
+                <!-- Memory 1 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 relative">
+                    <div class="absolute -left-[31px] top-6 w-3.5 h-3.5 rounded-full bg-petal-gold ring-4 ring-burgundy-950"></div>
+                    <span class="text-xs text-petal-gold font-semibold uppercase tracking-wider">The Reconnection</span>
+                    <h3 class="text-lg font-bold text-cream mt-0.5">Our first conversation after we went apart</h3>
+                    <p class="text-sm text-petal-pink/80 mt-2">
+                        The moment the spark rekindled, reminding us that no matter the distance or time, our hearts knew where they belonged.
+                    </p>
+                </div>
+
+                <!-- Memory 2 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 relative">
+                    <div class="absolute -left-[31px] top-6 w-3.5 h-3.5 rounded-full bg-petal-pink ring-4 ring-burgundy-950"></div>
+                    <span class="text-xs text-petal-pink font-semibold uppercase tracking-wider">First Date</span>
+                    <h3 class="text-lg font-bold text-cream mt-0.5">Our first movie date</h3>
+                    <p class="text-sm text-petal-pink/80 mt-2">
+                        Butterflies in stomach, shared glances in the dark, and a moment that marked the start of something beautiful.
+                    </p>
+                </div>
+
+                <!-- Memory 3 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 relative">
+                    <div class="absolute -left-[31px] top-6 w-3.5 h-3.5 rounded-full bg-petal-gold ring-4 ring-burgundy-950"></div>
+                    <span class="text-xs text-petal-gold font-semibold uppercase tracking-wider">Fun Moments</span>
+                    <h3 class="text-lg font-bold text-cream mt-0.5">Our first call with Carson & Emilio</h3>
+                    <p class="text-sm text-petal-pink/80 mt-2">
+                        Merging our worlds, laughing endlessly, and making memories with people who matter to us.
+                    </p>
+                </div>
+
+                <!-- Memory 4 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 relative">
+                    <div class="absolute -left-[31px] top-6 w-3.5 h-3.5 rounded-full bg-petal-pink ring-4 ring-burgundy-950"></div>
+                    <span class="text-xs text-petal-pink font-semibold uppercase tracking-wider">Milestone</span>
+                    <h3 class="text-lg font-bold text-cream mt-0.5">Our first monthversary</h3>
+                    <p class="text-sm text-petal-pink/80 mt-2">
+                        30 days of falling deeper in love, proving every single day that we were meant to be.
+                    </p>
+                </div>
+
+                <!-- Memory 5: Three Tries of I Love You -->
+                <div class="glass-card glass-card-hover rounded-2xl p-5 relative border-petal-gold/40">
+                    <div class="absolute -left-[31px] top-6 w-3.5 h-3.5 rounded-full bg-rose-500 ring-4 ring-burgundy-950 animate-pulse"></div>
+                    <span class="text-xs text-petal-gold font-semibold uppercase tracking-wider">The Three Steps</span>
+                    <h3 class="text-lg font-bold text-cream mt-0.5">Winning Your Heart ❤️</h3>
+                    <div class="space-y-2 mt-3 text-sm text-petal-pink/90">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-5 h-5 rounded-full bg-burgundy-900 border border-petal-pink/30 flex items-center justify-center text-xs">1</span>
+                            <p>My first try of saying <i>I love you</i></p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-5 h-5 rounded-full bg-burgundy-900 border border-petal-pink/30 flex items-center justify-center text-xs">2</span>
+                            <p>My second try...</p>
+                        </div>
+                        <div class="flex items-center space-x-2 text-petal-gold font-semibold">
+                            <span class="w-5 h-5 rounded-full bg-petal-gold text-burgundy-950 font-bold flex items-center justify-center text-xs">3</span>
+                            <p>My third try — <span class="underline underline-offset-4 decoration-petal-pink">it worked!</span> ✨</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="text-center pt-4">
+            <button id="open-letter-btn" class="group relative inline-flex items-center justify-center px-9 py-4 font-semibold text-cream transition-all duration-300 bg-gradient-to-r from-burgundy-800 via-rose-900 to-burgundy-800 rounded-full shadow-2xl border border-petal-pink/30 hover:border-petal-gold hover:scale-105 active:scale-95">
+                <i data-lucide="mail" class="w-5 h-5 mr-2.5 text-petal-gold transition-transform group-hover:rotate-12"></i>
+                <span class="font-serif-title text-lg tracking-wide">Open Love Letter</span>
+            </button>
+        </section>
+    </div>
+
+    <div id="letter-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-400">
+        <div class="glass-card rounded-3xl max-w-lg w-full p-6 md:p-8 relative transform scale-95 transition-transform duration-300 border-petal-pink/40 max-h-[88vh] overflow-y-auto">
+            
+            <button id="close-letter-btn" class="absolute top-4 right-4 p-2 rounded-full text-petal-pink/70 hover:text-cream hover:bg-burgundy-800/50 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="space-y-5">
+                <div class="flex items-center space-x-2 text-petal-gold">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    <span class="font-cursive text-3xl">Te amo, McKayla</span>
+                </div>
+
+                <h2 class="text-2xl font-serif-title font-bold text-cream">Happy My Girl Day, Beautiful ❤️</h2>
+
+                <div class="space-y-4 text-petal-soft/90 text-sm md:text-base leading-relaxed border-l-2 border-petal-gold/30 pl-4 py-1">
+                    <p>
+                        Happy My Girl Day to the best part of my world. Every day with you feels like October 1st.
+                    </p>
+                    <p>
+                        We fell in love officially on <strong class="text-petal-gold font-normal">June 23rd</strong> and since then my love kept growing (I went back to see the date and well, happy tears).
+                    </p>
+                    <p>
+                        I adore you, I adore you... <i>te amo</i> — that’s what took me to start winning you. I love you and <i>nhebbik</i> more and more each day.
+                    </p>
+                </div>
+
+                <!-- Tulips & Spider Lily Symbolism Note -->
+                <div class="p-4 rounded-2xl bg-burgundy-950/80 border border-petal-pink/20 text-xs space-y-1">
+                    <div class="flex items-center space-x-1.5 text-petal-gold font-semibold">
+                        <i data-lucide="flower" class="w-4 h-4"></i>
+                        <span>Tulips & Spider Lilies For You</span>
+                    </div>
+                    <p class="text-petal-pink/70">
+                        Just like your favorite flowers, you bring rare beauty and enduring romance into my life.
+                    </p>
+                </div>
+
+                <div class="pt-3 border-t border-petal-pink/15 flex justify-between items-center">
+                    <span class="font-cursive text-2xl text-petal-pink">Forever Yours</span>
+                    <button id="heart-burst-btn" class="flex items-center space-x-2 text-xs font-semibold px-4 py-2 rounded-full bg-petal-pink/20 text-petal-gold hover:bg-petal-pink/30 border border-petal-gold/30 transition-all">
+                        <i data-lucide="heart" class="w-3.5 h-3.5 fill-petal-gold"></i>
+                        <span>Shower Petals</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="relative z-10 text-center py-6 text-xs text-petal-pink/40 tracking-widest font-serif-title">
+        DEDICATED TO MCKAYLA MARY • OCTOBER 1ST
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Canvas Petals and Floral Particles Effect
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Petal/Flower Particle Object
+        class PetalParticle {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height + Math.random() * 20;
+                this.size = Math.random() * 8 + 6;
+                this.speedY = Math.random() * 1.2 + 0.4;
+                this.speedX = Math.sin(Math.random() * Math.PI) * 0.8;
+                this.rotation = Math.random() * 360;
+                this.rotSpeed = (Math.random() - 0.5) * 2;
+                
+                // Colors representing Tulips (pink/gold) and Spider Lily highlights
+                const colors = ['rgba(244, 194, 194, ', 'rgba(229, 193, 88, ', 'rgba(255, 228, 230, '];
+                const opacity = Math.random() * 0.4 + 0.2;
+                this.color = colors[Math.floor(Math.random() * colors.length)] + opacity + ')';
+            }
+
+            update() {
+                this.y -= this.speedY;
+                this.x += this.speedX;
+                this.rotation += this.rotSpeed;
+
+                if (this.y < -20) {
+                    this.reset();
+                }
+            }
+
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate((this.rotation * Math.PI) / 180);
+                ctx.fillStyle = this.color;
+                
+                // Draw Petal Shape
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.quadraticCurveTo(this.size / 2, -this.size, this.size, 0);
+                ctx.quadraticCurveTo(this.size / 2, this.size, 0, 0);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            const count = Math.min(Math.floor(window.innerWidth / 22), 35);
+            for (let i = 0; i < count; i++) {
+                const p = new PetalParticle();
+                p.y = Math.random() * canvas.height;
+                particles.push(p);
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        initParticles();
+        animateParticles();
+
+        // Relationship Counter: Official Date June 23rd
+        const officialDate = new Date(2024, 5, 23); // June = Month index 5
+
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - officialDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / 1000 / 60) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        }
+
+        setInterval(updateCounter, 1000);
+        updateCounter();
+
+        // Modal Controls
+        const openBtn = document.getElementById('open-letter-btn');
+        const closeBtn = document.getElementById('close-letter-btn');
+        const modal = document.getElementById('letter-modal');
+        const modalContent = modal.querySelector('div');
+
+        function openModal() {
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-95');
+            modalContent.classList.add('scale-100');
+            showerPetals();
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+        }
+
+        openBtn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        // Extra Petal Burst Effect
+        function showerPetals() {
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    const p = new PetalParticle();
+                    p.x = window.innerWidth / 2 + (Math.random() - 0.5) * 250;
+                    p.y = window.innerHeight / 2 + 100;
+                    p.speedY = Math.random() * 2.5 + 2;
+                    particles.push(p);
+                }, i * 40);
+            }
+        }
+
+        document.getElementById('heart-burst-btn').addEventListener('click', showerPetals);
+    </script>
+</body>
+</html>
